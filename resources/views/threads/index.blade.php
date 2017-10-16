@@ -11,7 +11,7 @@
                         @if (isset($threads) && count($threads) > 0)
                             @foreach ($threads as $thread)
                                 <article>
-                                    <h4><a href="{{route('threads.show',['id'=>$thread->id])}}">{{ $thread->title }}</a></h4>
+                                    <h4><a href="{{ route('threads.show',['id' => $thread->id]) }}">{{ $thread->title }}</a></h4>
                                     <div class="body">{{ $thread->body }}</div>
                                 </article>
                                 <hr>
